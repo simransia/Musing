@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css" />
+    <title>Meditation Time</title>
+</head>
+
+<body>
+     <div class="app">
+
+        <div class="default-video">
+            <video loop>
+                <source src="videos/ocean-waves.mp4">
+            </video>
+        </div>
+
+        <div class="time-selector">
+             <button data-time="120">2-Minutes</button>
+             <button data-time="300">5-Minutes</button>
+             <button data-time="600">10-Minutes</button>
+        </div>
+
+        <div class="player-container">
+            <audio class="song"  >
+                 <source src="sounds/sea-waves.mp3">
+            </audio>
+
+            <img src="images/play.png" alt="play" class="play">
+
+             <svg height="400" width="400" class="track-outline" >
+                <circle cx="200" cy="200" r="140" stroke="white" stroke-width="18" fill="none" />
+              </svg>
+
+              <svg height="400" width="400" class="moving-outline">
+                <circle cx="200" cy="200" r="140" stroke="#018EBA" stroke-width="18" fill="none" />
+              </svg>
+
+            <div class="time-display">
+                  0:00
+            </div>
+        </div>
+
+        <div class="sound-selector">
+            
+            <button data-sound="sounds/rain.mp3" data-video="videos/rain-on-leaves.mp4">
+            <img src="images/rain.png" alt="Rain" > 
+            </button> 
+
+            <button data-sound="sounds/birds.mp3" data-video="videos/Birds.mp4">
+                <img src="images/bird.png" alt="rain" >
+            </button>    
+
+            <button data-sound= "sounds/sun.mp3" data-video="videos/sun.mp4">   
+            <img src="images/sun.png" alt="rain" >
+           </button>      
+
+           
+
+            <button data-sound="sounds/sea-waves.mp3" data-video="videos/ocean-waves.mp4">
+                 <img src="images/wave.png" alt="rain" >
+            </button>      
+        </div>
+  
+
+
+    <script src="script.js" ></script>
+</body>
+</html>
